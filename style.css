@@ -73,12 +73,15 @@ button {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .icon {
+  color: inherit;
   user-select: none;
   font-size: 45px;
   animation: aparecer 0.8s alternate;
+  text-decoration: none;
 }
 
 
