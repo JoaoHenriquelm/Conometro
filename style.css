@@ -91,12 +91,14 @@ button {
 }
 
 #botao-refresh:focus {
+  user-select: none;
   animation: rotacao 1s;
 }
 
 
 @keyframes rotacao {
   to {
+    user-select: none;
     transform: rotate(360deg);
   }
 }
