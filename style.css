@@ -1,0 +1,120 @@
+body {
+  font-size: 10px;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+  width: 55rem;
+  background-color: transparent;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #292929;
+    color: white;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .5);
+}
+
+.numero {
+    font-size: 8rem;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+#container-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 5rem;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 45px;
+  animation: aparecer 0.8s alternate;
+}
+
+
+#botao-pause {
+  display: none;
+}
+
+#botao-start {
+  display: block;
+}
+
+#botao-refresh:focus {
+  animation: rotacao 1s;
+}
+
+
+@keyframes rotacao {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    font-size: 0px;
+  }
+
+  75% {
+    font-size: 55px;
+  }
+
+  100% {
+    font-size: 45px;
+  }
+}
+
+
+
+
+
+
