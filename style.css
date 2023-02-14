@@ -151,6 +151,23 @@ button {
   }
 }
 
+@media screen and (max-width: 500px) {
+  main {
+    width: 20rem;
+    height: 8rem;
+  }
+
+  .square {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .numero {
+    font-size: 2rem;
+  }
+}
+
+
 
 
 
