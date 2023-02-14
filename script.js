@@ -48,6 +48,7 @@ function reiniciar() {
   segundostela.textContent = `00`
   pause.style.display = "none"
   start.style.display = "block"
+  document.title = `Cronômetro`
 }
 
 function conometro() {
@@ -61,7 +62,9 @@ function conometro() {
     minutos++
   }
 
-  segundostela.textContent = segundos < 10 ? `0${segundos}` : segundos
-  minutostela.textContent = minutos < 10 ? `0${minutos}` : minutos
-  horastela.textContent = horas < 10 ? `0${horas}` : horas
+  var segundost = segundostela.textContent = segundos < 10 ? `0${segundos}` : segundos
+  var minutost = minutostela.textContent = minutos < 10 ? `0${minutos}` : minutos
+  var horast = horastela.textContent = horas < 10 ? `0${horas}` : horas
+
+  document.title = `${horast}:${minutost}:${segundost}`
 }
