@@ -67,6 +67,7 @@ span {
 }
 
 button {
+  user-select: none;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -75,6 +76,7 @@ button {
 }
 
 .icon {
+  user-select: none;
   font-size: 45px;
   animation: aparecer 0.8s alternate;
 }
